@@ -1,0 +1,33 @@
+/* .buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-section {
+    text-align: center;
+}
+
+.login-button,
+.register-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccd3db;
+    color: #2d2b2b;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: #6dca97;
+} */

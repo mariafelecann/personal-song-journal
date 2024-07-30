@@ -1,0 +1,18 @@
+.add-song-form-container {
+    align-items: center;
+    text-align: center;
+}
+
+.input-box {
+    align-items: center;
+    margin-left: 10px;
+    float: right;
+}
+
+.elements-container {
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    float: inline-end;
+}

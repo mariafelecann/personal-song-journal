@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+}
+
+.header-title {
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.sidebar {
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.add-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.song-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the container takes up the full width */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.song-list-wrapper {
+    width: 80%;
+}

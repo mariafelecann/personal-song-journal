@@ -1,0 +1,135 @@
+/* .container-search-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #3d5131;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #2a3a31;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-controls input,
+.search-controls select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.song-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.song-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+.song-list li:last-child {
+    border-bottom: none;
+} */
+
+.container-search-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1a241f; /* Slightly lighter shade of #0e1609 */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -120px;
+    /* margin-left: 178px; */
+    margin-left: -20px;
+}
+
+.search-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #0e1609; /* Original dark color */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-controls input,
+.search-controls select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* .song-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+.song-list li:last-child {
+    border-bottom: none;
+} */
+
+.search-flex {
+    display: flex;
+}
+
+.song-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.song-item strong {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.song-item span {
+    font-size: 14px;
+    color: #333;
+}
+
+.song-list {
+    /* margin-left: 70px; */
+    margin-top: 50px;
+}
