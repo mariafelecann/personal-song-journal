@@ -5,8 +5,7 @@ const { GenreRepository } = require("./genre_repository.js");
 
 class SongRepository {
   constructor() {
-    this.uri =
-      "mongodb+srv://mariafelecan19:doamneajuta@songjournal.xogtvqh.mongodb.net/?retryWrites=true&w=majority&appName=SongJournal";
+    this.uri = process.env.MONGO_URI;
     this.client = new MongoClient(this.uri, {});
     this.collection = null;
     this.existingIds = null;

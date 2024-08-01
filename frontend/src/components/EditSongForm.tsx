@@ -9,11 +9,11 @@ type EditFormProps = {
 
 const EditSong = (props: EditFormProps) => {
     const {data, onBackButtonClick, onUpdateClickHandler} = props;
-    const [title, SetTitle] = useState(data.songName);
-    const [artist, SetArtist] = useState(data.artistName);
+    const [songName, SetTitle] = useState(data.songName);
+    const [artistName, SetArtist] = useState(data.artistName);
     const [rating, SetRating] = useState(data.rating);
     const [review, SetReview] = useState(data.review);
-    const [genre, SetGenre] = useState(data.genreId);
+    const [genreId, SetGenre] = useState(data.genreId);
 
     const genreChangeHandler = (e: any) => {
         SetGenre(e.target.value);
@@ -34,8 +34,8 @@ const EditSong = (props: EditFormProps) => {
     };
     const onSubmitClickHandler = (e: any) => {
         e.preventDefault();
-        const titleError = validateTitle(title);
-        const artistError = validateArtist(artist);
+        const titleError = validateTitle(songName);
+        const artistError = validateArtist(artistName);
         const ratingError = validateRating(rating.toString());
         const reviewError = validateReview(review);
 
@@ -44,11 +44,11 @@ const EditSong = (props: EditFormProps) => {
         } else {
             const updatedData: ISong = {
                 songId: data.songId,
-                songName: title,
-                artistName: artist,
+                songName: songName,
+                artistName: artistName,
                 rating: rating,
                 review: review,
-                genreId: genre,
+                genreId: genreId,
             };
 
             onUpdateClickHandler(updatedData);
@@ -99,7 +99,7 @@ const EditSong = (props: EditFormProps) => {
                     <input
                         className='input-box'
                         type='text'
-                        value={title}
+                        value={songName}
                         onChange={titleChangeHandler}
                     />
                 </div>
@@ -108,7 +108,7 @@ const EditSong = (props: EditFormProps) => {
                     <input
                         className='input-box'
                         type='text'
-                        value={artist}
+                        value={artistName}
                         onChange={artistChangeHandler}
                     />
                 </div>
@@ -135,7 +135,7 @@ const EditSong = (props: EditFormProps) => {
                     <input
                         className='input-box'
                         type='text'
-                        value={genre}
+                        value={genreId}
                         onChange={genreChangeHandler}
                     />
                 </div>

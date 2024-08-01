@@ -11,7 +11,7 @@ const RegisterPage = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                'https://cpnrb56tas.eu-west-3.awsapprunner.com/welcome/register',
+                'http://localhost:3000/welcome/register',
                 {
                     username,
                     password,

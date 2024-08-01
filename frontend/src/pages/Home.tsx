@@ -10,7 +10,7 @@ import {ISong} from '../components/objects/MySong.type';
 import Diagram from './Diagram';
 import ErrorPage from './ErrorPage';
 import './Home.style.css';
-import SortFilter from './SortFilter';
+// import SortFilter from './SortFilter';
 import WelcomePage from './WelcomePage';
 import GenreHome from './genre_information/GenreHome';
 
@@ -505,12 +505,12 @@ const Home = () => {
                         onBackButtonClick={showListPage}
                     />
                 )}
-                {ShownPage == PageEnum.sort_filter && (
+                {/* {ShownPage == PageEnum.sort_filter && (
                     <SortFilter
                         list={MySongList}
                         onBackButtonClick={showListPage}
                     />
-                )}
+                )} */}
                 {ShownPage == PageEnum.error && (
                     <ErrorPage
                         new_error={connectionErrorMessage}

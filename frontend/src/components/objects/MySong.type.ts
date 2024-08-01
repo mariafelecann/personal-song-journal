@@ -4,7 +4,7 @@ export interface ISong {
     artistName: string;
     rating: number;
     review: string;
-    genreId: string;
+    genreId : string;
 }
 
 export const DummySongList = [
