@@ -18,7 +18,7 @@ const Diagram = ({list, onBackButtonClick}: DiagramProps) => {
     const chartData = list.map((song, index) => ({
         // name: `Song ${index + 1}`,
         index: `Song ${index + 1}`,
-        name: song.songName,
+        songName: song.songName,
         rating: song.rating,
     }));
 
