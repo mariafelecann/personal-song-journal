@@ -13,7 +13,7 @@ const AddGenre = (props: AddGenreProps) => {
     const [newOrigin, SetOrigin] = useState('');
     const [newPopularity, SetPopularity] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    const connection = 'http://localhost:3000';
+    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
     const nameChangeHandler = (e: any) => {
         SetName(e.target.value);
     };

@@ -10,7 +10,7 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [ShownPage, SetShownPage] = useState(PageEnum.login);
-    const connection = 'http://localhost:3000';
+    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
     const handleLogin = async () => {
         try {
             const response = await axios.post(connection + '/welcome/login', {

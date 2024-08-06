@@ -6,12 +6,12 @@ const RegisterPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-
+    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
     const handleRegister = async (e: any) => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                'http://localhost:3000/welcome/register',
+                connection + '/welcome/register',
                 {
                     username,
                     password,

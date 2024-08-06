@@ -14,7 +14,7 @@ const GenreHome = () => {
     const [DataToEdit, SetDataToEdit] = useState({} as IGenre);
     const [errorMessage, setErrorMessage] = useState('');
     //const client = new W3CWebSocket('ws://localhost:4000/');
-    const connection = 'http://localhost:3000';
+    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
 
     useEffect(() => {
         axios
