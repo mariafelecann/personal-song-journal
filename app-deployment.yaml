@@ -21,12 +21,12 @@ spec:
         - name: PORT
           value: "3000"
         - name: MONGO_URI
-          value: "mongodb://mongo:27017/SongJournalDataBase"
+          value: "mongodb+srv://mariafelecan19:doamneajuta@songjournal.xogtvqh.mongodb.net/SongJournalDataBase?retryWrites=true&w=majority&appName=SongJournal"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: backendService
+  name: backend-service
 spec:
   type: NodePort
   selector:

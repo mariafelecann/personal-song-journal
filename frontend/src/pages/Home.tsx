@@ -23,7 +23,7 @@ const Home = () => {
     const [isOnline, setIsOnline] = useState(navigator.onLine);
     const [isServer, setIsServer] = useState('false');
     const [firstCachedData, setFirstCachedData] = useState('true');
-    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
+    const connection = process.env.BACKEND_URL;
     const client = new W3CWebSocket('ws://localhost:4000/');
     const [syncData, setSyncData] = useState('false');
     const [isServerAndOnline, setIsServerAndOnline] = useState('false');
