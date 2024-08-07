@@ -11,9 +11,10 @@ const LoginPage = () => {
     const [error, setError] = useState('');
     const [ShownPage, SetShownPage] = useState(PageEnum.login);
     const connection = process.env.REACT_APP_BACKEND_URL;
+    console.log("Backend URL:", connection);
     const handleLogin = async () => {
         try {
-            const response = await axios.post(connection + '/welcome/login', {
+            const response = await axios.post(`${connection}/welcome/login`, {
                 username,
                 password,
             });
