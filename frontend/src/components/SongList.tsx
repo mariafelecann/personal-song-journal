@@ -21,7 +21,7 @@ const SongList = (props: ListProps) => {
     const [genreNames, setGenreNames] = useState<Map<string, string>>(
         new Map(),
     );
-    const connection = 'http://localhost:3000';
+    const connection = process.env.REACT_APP_BACKEND_URL;
 
     useEffect(() => {
         const fetchGenreNames = async () => {

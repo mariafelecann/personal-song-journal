@@ -20,7 +20,7 @@ const AddSong = (props: AddSongProps) => {
     const [review, SetReview] = useState('');
     const [genre, SetGenre] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    const connection = process.env.BACKEND_URL;
+    const connection = process.env.REACT_APP_BACKEND_URL;
 
     const genreChangeHandler = (e: any) => {
         SetGenre(e.target.value);

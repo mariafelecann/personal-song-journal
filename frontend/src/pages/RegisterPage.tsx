@@ -6,7 +6,7 @@ const RegisterPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    const connection = process.env.BACKEND_URL || 'http://localhost:3000';
+    const connection = process.env.REACT_APP_BACKEND_URL;
     const handleRegister = async (e: any) => {
         e.preventDefault();
         try {
